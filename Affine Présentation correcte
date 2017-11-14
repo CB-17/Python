@@ -1,0 +1,18 @@
+#cette fonction permet d'insérer les variables a et b
+def Entrée():
+    a = int(input("Entrer une valeur de a:"))
+    b = int(input("Entrer une valeur b:"))
+    return a,b
+#cette fonction calcule la fonction affine c=ax+b.
+#entrée:x un nombre réel représentant l'antécédant de la fonction, a un nombre entier représentant le coef.
+#sortie:c un nombre réel image de x.
+def Métier ():
+        c=a*x+b
+        return c
+#cette fonction affiche les sortie.
+def Sortie():
+            print(c)
+a,b = Entrée()
+for x in range(0,10):
+    c = Métier()
+    Sortie()
