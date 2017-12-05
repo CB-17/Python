@@ -1,0 +1,25 @@
+#cette fonction permet d'insérer les deux distances
+def entree():
+    d1 = int(input("Entrer une valeur de d1:"))
+    d2 = int(input("Entrer une valeur d2:"))
+    return d1,d2
+d1,d2=entree()
+#entrée:soit d1 et d2 deux distances 
+#cette fonction permet de calculer la force pour différentes distances entre d1 et d2
+n=0
+def métier(d1,d2):
+    m=10000
+    F=0
+    F=(6.67*10**-11)*(100000000)
+    F=F/(d1*2**n)**2
+    return F
+F=métier(d1,d2)
+#cette fonction affiche la force
+def sortie():
+    print (F)
+sortie()
+n=1
+while (d1*2**n<d2):
+        F=métier(d1,d2)
+        sortie()
+        n=n+1
